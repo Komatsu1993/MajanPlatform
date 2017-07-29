@@ -54,6 +54,7 @@ class CheckYaku {
         x88.tasusi(j: ji)
         x88.daisangen(j: ji)
         x88.ryuiso(a: all)
+        x88.churen(a: all, w: mati)
         x88.sukan(k1: kata1, k2: kata2, k3: kata3, k4: kata4)
         yaku = x88.yaku
         

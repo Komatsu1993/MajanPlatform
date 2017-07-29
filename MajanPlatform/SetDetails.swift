@@ -132,7 +132,7 @@ class SetDetails: UIViewController {
                 
                 // 点数の計算
                 // まず上がり役と点数の辞書を作る
-                let yakuPt = henkan(yaku: yaku)
+                var yakuPt = henkan(yaku: yaku)
                 var ten = 0
                 for (_, pt) in yakuPt {
                     ten += pt
@@ -142,6 +142,7 @@ class SetDetails: UIViewController {
                 if ten == 0 {
                     ten = 8
                     yaku[42] = 1
+                    yakuPt["無番和"] = 8
                 }
                 
                 // 高天法の処理
@@ -152,6 +153,47 @@ class SetDetails: UIViewController {
         
             } else if pai.count == 7 {
                 // 対子系の処理
+                // マンピンソウジの設定
+                var man = [Int](), pin = [Int](), sou = [Int](), ji = [Int]()
+                for i in 0...33 {
+                    if i <= 8 {
+                        man.append(all[i])
+                    } else if i <= 17 {
+                        pin.append(all[i])
+                    } else if i <= 26 {
+                        sou.append(all[i])
+                    } else if i <= 33 {
+                        ji.append(all[i])
+                    }
+                }
+                // 対子役計算処理
+                let toitu = YakuToitu(t1: pai[0][0], t2: pai[1][0], t3: pai[2][0], t4: pai[3][0], t5: pai[4][0], t6: pai[5][0], t7: pai[6][0], m: man, p: pin, s: sou, j: ji, a: all, t: tumoHow.isOn)
+                var yaku = toitu.check()
+                if kanshanHow.isOn {
+                    yaku[45] = 1
+                }
+                if tyankanHow.isOn {
+                    yaku[46] = 1
+                }
+                if myaoshaoHow.isOn {
+                    yaku[43] = 1
+                }
+                if haiteiHow.isOn {
+                    yaku[44] = 1
+                }
+                if zecchoHow.isOn {
+                    yaku[58] = 1
+                }
+                let yakuPt = henkan(yaku: yaku)
+                var ten = 0
+                for (_, pt) in yakuPt {
+                    ten += pt
+                }
+                // 高天法の処理
+                if ten >= now {
+                    ans = yakuPt
+                    now = ten
+                }
             }
         }
         
