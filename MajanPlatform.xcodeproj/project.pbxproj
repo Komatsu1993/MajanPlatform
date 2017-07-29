@@ -64,6 +64,7 @@
 		55FF5B4F1F2C97DB009E9C61 /* Yaku2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */; };
 		55FF5B511F2C97F3009E9C61 /* Yaku1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B501F2C97F3009E9C61 /* Yaku1.swift */; };
 		55FF5B531F2C982C009E9C61 /* CheckYaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B521F2C982C009E9C61 /* CheckYaku.swift */; };
+		55FF5B551F2C9CD9009E9C61 /* Kekka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B541F2C9CD9009E9C61 /* Kekka.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku2.swift; sourceTree = "<group>"; };
 		55FF5B501F2C97F3009E9C61 /* Yaku1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku1.swift; sourceTree = "<group>"; };
 		55FF5B521F2C982C009E9C61 /* CheckYaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckYaku.swift; sourceTree = "<group>"; };
+		55FF5B541F2C9CD9009E9C61 /* Kekka.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kekka.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 				55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */,
 				55FF5B501F2C97F3009E9C61 /* Yaku1.swift */,
 				55FF5B521F2C982C009E9C61 /* CheckYaku.swift */,
+				55FF5B541F2C9CD9009E9C61 /* Kekka.swift */,
 			);
 			path = MajanPlatform;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				553F0C131F275519003816E5 /* ViewController.swift in Sources */,
 				55FF5B431F2C9739009E9C61 /* Yaku24.swift in Sources */,
+				55FF5B551F2C9CD9009E9C61 /* Kekka.swift in Sources */,
 				55FF5B4F1F2C97DB009E9C61 /* Yaku2.swift in Sources */,
 				555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */,
 				55FF5B3D1F2C96E5009E9C61 /* Yaku64.swift in Sources */,

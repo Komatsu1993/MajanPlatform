@@ -668,7 +668,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="点数表示"/>
                                 <connections>
-                                    <segue destination="9hc-PE-ylr" kind="presentation" id="OK8-AC-WyX"/>
+                                    <segue destination="9hc-PE-ylr" kind="presentation" identifier="toKekka" id="OK8-AC-WyX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="前の牌姿をそのまま貼り付ける" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY3-Ck-TtZ">
@@ -743,12 +743,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPh-yl-lh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XHv-kZ-FDP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="23"/>
+            <point key="canvasLocation" x="1148" y="22"/>
         </scene>
-        <!--View Controller-->
+        <!--Kekka-->
         <scene sceneID="UzL-0H-4K3">
             <objects>
-                <viewController id="9hc-PE-ylr" sceneMemberID="viewController">
+                <viewController id="9hc-PE-ylr" customClass="Kekka" customModule="MajanPlatform" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7qu-YV-PsU"/>
                         <viewControllerLayoutGuide type="bottom" id="jXc-hq-aYJ"/>
@@ -771,16 +771,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="役名：点数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-zM-baG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="役名：点数" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-zM-baG">
                                 <rect key="frame" x="95" y="132" width="424" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="合計点数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDT-tu-Wvw">
-                                <rect key="frame" x="113" y="273" width="353" height="21"/>
+                                <rect key="frame" x="98" y="273" width="368" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -801,11 +803,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="goukeiten" destination="GDT-tu-Wvw" id="BfF-Z5-yUE"/>
+                        <outlet property="yakumei" destination="mGf-zM-baG" id="BbQ-UI-rnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMD-TK-1eJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="G3N-IB-LCg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="22"/>
+            <point key="canvasLocation" x="1889.5052473763119" y="21.600000000000001"/>
         </scene>
     </scenes>
     <resources>
