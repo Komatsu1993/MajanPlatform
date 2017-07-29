@@ -28,6 +28,28 @@ class SetDetails: UIViewController {
     @IBOutlet weak var baHow: UISegmentedControl!
     @IBOutlet weak var ieHow: UISegmentedControl!
     
+    // リンシャン : チャンカン,ハイテイはない
+    @IBAction func rinshan(_ sender: Any) {
+        tyankanHow.isOn = false; haiteiHow.isOn = false;
+    }
+    // チャンカン : ツモ,リンシャン,ミャオシャオ,ハイテイ,ゼッチョウはない
+    @IBAction func tyankan(_ sender: Any) {
+        tumoHow.isOn = false; kanshanHow.isOn = false; myaoshaoHow.isOn = false;
+        haiteiHow.isOn = false; zecchoHow.isOn = false;
+    }
+    // ミャオシャオ : チャンカン,ハイテイはない
+    @IBAction func myaoshao(_ sender: Any) {
+        tyankanHow.isOn = false; haiteiHow.isOn = false;
+    }
+    // ゼッチョウ : チャンカンはない
+    @IBAction func zeccho(_ sender: Any) {
+        tyankanHow.isOn = false
+    }
+    // ハイテイ : ツモ,リンシャン,チャンカン,ミャオシャオはない
+    @IBAction func haitei(_ sender: Any) {
+        tumoHow.isOn = false; kanshanHow.isOn = false;
+        tyankanHow.isOn = false; myaoshaoHow.isOn = false;
+    }
     
 
     override func viewDidLoad() {
@@ -48,14 +70,9 @@ class SetDetails: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+        
     }
-    */
+
 
 }

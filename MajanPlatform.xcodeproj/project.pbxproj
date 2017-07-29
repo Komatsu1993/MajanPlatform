@@ -51,6 +51,19 @@
 		553F0CBB1F277708003816E5 /* sou9-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */; };
 		555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */; };
 		555BFE981F2B01ED005EF9D8 /* SetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE971F2B01ED005EF9D8 /* SetDetails.swift */; };
+		55FF5B3B1F2C96A8009E9C61 /* Yaku88.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B3A1F2C96A8009E9C61 /* Yaku88.swift */; };
+		55FF5B3D1F2C96E5009E9C61 /* Yaku64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B3C1F2C96E5009E9C61 /* Yaku64.swift */; };
+		55FF5B3F1F2C9704009E9C61 /* Yaku48.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B3E1F2C9704009E9C61 /* Yaku48.swift */; };
+		55FF5B411F2C971B009E9C61 /* Yaku32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B401F2C971B009E9C61 /* Yaku32.swift */; };
+		55FF5B431F2C9739009E9C61 /* Yaku24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B421F2C9739009E9C61 /* Yaku24.swift */; };
+		55FF5B451F2C9757009E9C61 /* Yaku16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B441F2C9757009E9C61 /* Yaku16.swift */; };
+		55FF5B471F2C9773009E9C61 /* Yaku12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B461F2C9773009E9C61 /* Yaku12.swift */; };
+		55FF5B491F2C9790009E9C61 /* Yaku8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B481F2C9790009E9C61 /* Yaku8.swift */; };
+		55FF5B4B1F2C97AB009E9C61 /* Yaku6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B4A1F2C97AB009E9C61 /* Yaku6.swift */; };
+		55FF5B4D1F2C97C8009E9C61 /* Yaku4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B4C1F2C97C8009E9C61 /* Yaku4.swift */; };
+		55FF5B4F1F2C97DB009E9C61 /* Yaku2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */; };
+		55FF5B511F2C97F3009E9C61 /* Yaku1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B501F2C97F3009E9C61 /* Yaku1.swift */; };
+		55FF5B531F2C982C009E9C61 /* CheckYaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF5B521F2C982C009E9C61 /* CheckYaku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +134,19 @@
 		553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou9-66-90-s-emb.png"; sourceTree = "<group>"; };
 		555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgariHantei.swift; sourceTree = "<group>"; };
 		555BFE971F2B01ED005EF9D8 /* SetDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDetails.swift; sourceTree = "<group>"; };
+		55FF5B3A1F2C96A8009E9C61 /* Yaku88.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku88.swift; sourceTree = "<group>"; };
+		55FF5B3C1F2C96E5009E9C61 /* Yaku64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku64.swift; sourceTree = "<group>"; };
+		55FF5B3E1F2C9704009E9C61 /* Yaku48.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku48.swift; sourceTree = "<group>"; };
+		55FF5B401F2C971B009E9C61 /* Yaku32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku32.swift; sourceTree = "<group>"; };
+		55FF5B421F2C9739009E9C61 /* Yaku24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku24.swift; sourceTree = "<group>"; };
+		55FF5B441F2C9757009E9C61 /* Yaku16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku16.swift; sourceTree = "<group>"; };
+		55FF5B461F2C9773009E9C61 /* Yaku12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku12.swift; sourceTree = "<group>"; };
+		55FF5B481F2C9790009E9C61 /* Yaku8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku8.swift; sourceTree = "<group>"; };
+		55FF5B4A1F2C97AB009E9C61 /* Yaku6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku6.swift; sourceTree = "<group>"; };
+		55FF5B4C1F2C97C8009E9C61 /* Yaku4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku4.swift; sourceTree = "<group>"; };
+		55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku2.swift; sourceTree = "<group>"; };
+		55FF5B501F2C97F3009E9C61 /* Yaku1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yaku1.swift; sourceTree = "<group>"; };
+		55FF5B521F2C982C009E9C61 /* CheckYaku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckYaku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +240,19 @@
 				553959BE1F2A022400FDDE7A /* PaiSet.swift */,
 				555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */,
 				555BFE971F2B01ED005EF9D8 /* SetDetails.swift */,
+				55FF5B3A1F2C96A8009E9C61 /* Yaku88.swift */,
+				55FF5B3C1F2C96E5009E9C61 /* Yaku64.swift */,
+				55FF5B3E1F2C9704009E9C61 /* Yaku48.swift */,
+				55FF5B401F2C971B009E9C61 /* Yaku32.swift */,
+				55FF5B421F2C9739009E9C61 /* Yaku24.swift */,
+				55FF5B441F2C9757009E9C61 /* Yaku16.swift */,
+				55FF5B461F2C9773009E9C61 /* Yaku12.swift */,
+				55FF5B481F2C9790009E9C61 /* Yaku8.swift */,
+				55FF5B4A1F2C97AB009E9C61 /* Yaku6.swift */,
+				55FF5B4C1F2C97C8009E9C61 /* Yaku4.swift */,
+				55FF5B4E1F2C97DB009E9C61 /* Yaku2.swift */,
+				55FF5B501F2C97F3009E9C61 /* Yaku1.swift */,
+				55FF5B521F2C982C009E9C61 /* CheckYaku.swift */,
 			);
 			path = MajanPlatform;
 			sourceTree = "<group>";
@@ -405,10 +444,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F0C131F275519003816E5 /* ViewController.swift in Sources */,
+				55FF5B431F2C9739009E9C61 /* Yaku24.swift in Sources */,
+				55FF5B4F1F2C97DB009E9C61 /* Yaku2.swift in Sources */,
 				555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */,
+				55FF5B3D1F2C96E5009E9C61 /* Yaku64.swift in Sources */,
+				55FF5B491F2C9790009E9C61 /* Yaku8.swift in Sources */,
+				55FF5B4D1F2C97C8009E9C61 /* Yaku4.swift in Sources */,
+				55FF5B471F2C9773009E9C61 /* Yaku12.swift in Sources */,
+				55FF5B411F2C971B009E9C61 /* Yaku32.swift in Sources */,
+				55FF5B451F2C9757009E9C61 /* Yaku16.swift in Sources */,
 				555BFE981F2B01ED005EF9D8 /* SetDetails.swift in Sources */,
 				553F0C111F275519003816E5 /* AppDelegate.swift in Sources */,
+				55FF5B3F1F2C9704009E9C61 /* Yaku48.swift in Sources */,
+				55FF5B511F2C97F3009E9C61 /* Yaku1.swift in Sources */,
+				55FF5B531F2C982C009E9C61 /* CheckYaku.swift in Sources */,
 				553959BF1F2A022400FDDE7A /* PaiSet.swift in Sources */,
+				55FF5B4B1F2C97AB009E9C61 /* Yaku6.swift in Sources */,
+				55FF5B3B1F2C96A8009E9C61 /* Yaku88.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
