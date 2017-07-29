@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		553959BF1F2A022400FDDE7A /* PaiSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553959BE1F2A022400FDDE7A /* PaiSet.swift */; };
+		553F0C111F275519003816E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F0C101F275519003816E5 /* AppDelegate.swift */; };
+		553F0C131F275519003816E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F0C121F275519003816E5 /* ViewController.swift */; };
+		553F0C161F275519003816E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C141F275519003816E5 /* Main.storyboard */; };
+		553F0C181F275519003816E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C171F275519003816E5 /* Assets.xcassets */; };
+		553F0C1B1F275519003816E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C191F275519003816E5 /* LaunchScreen.storyboard */; };
+		553F0C261F275519003816E5 /* MajanPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F0C251F275519003816E5 /* MajanPlatformTests.swift */; };
+		553F0C311F275519003816E5 /* MajanPlatformUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F0C301F275519003816E5 /* MajanPlatformUITests.swift */; };
+		553F0C411F27606A003816E5 /* ji1-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C401F27606A003816E5 /* ji1-66-90-s-emb.png */; };
+		553F0C431F2763F9003816E5 /* ji2-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C421F2763F9003816E5 /* ji2-66-90-s-emb.png */; };
+		553F0C641F276423003816E5 /* ji3-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C441F276423003816E5 /* ji3-66-90-s-emb.png */; };
+		553F0C651F276423003816E5 /* ji4-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C451F276423003816E5 /* ji4-66-90-s-emb.png */; };
+		553F0C661F276423003816E5 /* ji5-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C461F276423003816E5 /* ji5-66-90-s-emb.png */; };
+		553F0C681F276423003816E5 /* ji7-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C481F276423003816E5 /* ji7-66-90-s-emb.png */; };
+		553F0C851F2764D7003816E5 /* ji6-66-90-s-yoko-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C841F2764D7003816E5 /* ji6-66-90-s-yoko-emb.png */; };
+		553F0CA11F277708003816E5 /* man1-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C861F277707003816E5 /* man1-66-90-s-emb.png */; };
+		553F0CA21F277708003816E5 /* man2-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C871F277707003816E5 /* man2-66-90-s-emb.png */; };
+		553F0CA31F277708003816E5 /* man3-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C881F277707003816E5 /* man3-66-90-s-emb.png */; };
+		553F0CA41F277708003816E5 /* man4-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C891F277707003816E5 /* man4-66-90-s-emb.png */; };
+		553F0CA51F277708003816E5 /* man5-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8A1F277707003816E5 /* man5-66-90-s-emb.png */; };
+		553F0CA61F277708003816E5 /* man6-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8B1F277707003816E5 /* man6-66-90-s-emb.png */; };
+		553F0CA71F277708003816E5 /* man7-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8C1F277707003816E5 /* man7-66-90-s-emb.png */; };
+		553F0CA81F277708003816E5 /* man8-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8D1F277707003816E5 /* man8-66-90-s-emb.png */; };
+		553F0CA91F277708003816E5 /* man9-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8E1F277707003816E5 /* man9-66-90-s-emb.png */; };
+		553F0CAA1F277708003816E5 /* pin1-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C8F1F277707003816E5 /* pin1-66-90-s-emb.png */; };
+		553F0CAB1F277708003816E5 /* pin2-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C901F277707003816E5 /* pin2-66-90-s-emb.png */; };
+		553F0CAC1F277708003816E5 /* pin3-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C911F277707003816E5 /* pin3-66-90-s-emb.png */; };
+		553F0CAD1F277708003816E5 /* pin4-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C921F277707003816E5 /* pin4-66-90-s-emb.png */; };
+		553F0CAE1F277708003816E5 /* pin5-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C931F277707003816E5 /* pin5-66-90-s-emb.png */; };
+		553F0CAF1F277708003816E5 /* pin6-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C941F277707003816E5 /* pin6-66-90-s-emb.png */; };
+		553F0CB01F277708003816E5 /* pin7-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C951F277707003816E5 /* pin7-66-90-s-emb.png */; };
+		553F0CB11F277708003816E5 /* pin8-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C961F277707003816E5 /* pin8-66-90-s-emb.png */; };
+		553F0CB21F277708003816E5 /* pin9-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C971F277707003816E5 /* pin9-66-90-s-emb.png */; };
+		553F0CB31F277708003816E5 /* sou1-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C981F277707003816E5 /* sou1-66-90-s-emb.png */; };
+		553F0CB41F277708003816E5 /* sou2-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C991F277707003816E5 /* sou2-66-90-s-emb.png */; };
+		553F0CB51F277708003816E5 /* sou3-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9A1F277707003816E5 /* sou3-66-90-s-emb.png */; };
+		553F0CB61F277708003816E5 /* sou4-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9B1F277707003816E5 /* sou4-66-90-s-emb.png */; };
+		553F0CB71F277708003816E5 /* sou5-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9C1F277708003816E5 /* sou5-66-90-s-emb.png */; };
+		553F0CB81F277708003816E5 /* sou6-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9D1F277708003816E5 /* sou6-66-90-s-emb.png */; };
+		553F0CB91F277708003816E5 /* sou7-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9E1F277708003816E5 /* sou7-66-90-s-emb.png */; };
+		553F0CBA1F277708003816E5 /* sou8-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9F1F277708003816E5 /* sou8-66-90-s-emb.png */; };
+		553F0CBB1F277708003816E5 /* sou9-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */; };
+		555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */; };
+		555BFE981F2B01ED005EF9D8 /* SetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE971F2B01ED005EF9D8 /* SetDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		553F0C221F275519003816E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F0C051F275519003816E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F0C0C1F275519003816E5;
+			remoteInfo = MajanPlatform;
+		};
+		553F0C2D1F275519003816E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553F0C051F275519003816E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553F0C0C1F275519003816E5;
+			remoteInfo = MajanPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		553959BE1F2A022400FDDE7A /* PaiSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaiSet.swift; sourceTree = "<group>"; };
+		553F0C0D1F275519003816E5 /* MajanPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajanPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F0C101F275519003816E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		553F0C121F275519003816E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		553F0C151F275519003816E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		553F0C171F275519003816E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		553F0C1A1F275519003816E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		553F0C1C1F275519003816E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553F0C211F275519003816E5 /* MajanPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajanPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F0C251F275519003816E5 /* MajanPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajanPlatformTests.swift; sourceTree = "<group>"; };
+		553F0C271F275519003816E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553F0C2C1F275519003816E5 /* MajanPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajanPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553F0C301F275519003816E5 /* MajanPlatformUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajanPlatformUITests.swift; sourceTree = "<group>"; };
+		553F0C321F275519003816E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553F0C401F27606A003816E5 /* ji1-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji1-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C421F2763F9003816E5 /* ji2-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji2-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C441F276423003816E5 /* ji3-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji3-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C451F276423003816E5 /* ji4-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji4-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C461F276423003816E5 /* ji5-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji5-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C481F276423003816E5 /* ji7-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji7-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C841F2764D7003816E5 /* ji6-66-90-s-yoko-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ji6-66-90-s-yoko-emb.png"; sourceTree = "<group>"; };
+		553F0C861F277707003816E5 /* man1-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man1-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C871F277707003816E5 /* man2-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man2-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C881F277707003816E5 /* man3-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man3-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C891F277707003816E5 /* man4-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man4-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8A1F277707003816E5 /* man5-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man5-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8B1F277707003816E5 /* man6-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man6-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8C1F277707003816E5 /* man7-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man7-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8D1F277707003816E5 /* man8-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man8-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8E1F277707003816E5 /* man9-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man9-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C8F1F277707003816E5 /* pin1-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin1-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C901F277707003816E5 /* pin2-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin2-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C911F277707003816E5 /* pin3-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin3-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C921F277707003816E5 /* pin4-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin4-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C931F277707003816E5 /* pin5-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin5-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C941F277707003816E5 /* pin6-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin6-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C951F277707003816E5 /* pin7-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin7-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C961F277707003816E5 /* pin8-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin8-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C971F277707003816E5 /* pin9-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin9-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C981F277707003816E5 /* sou1-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou1-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C991F277707003816E5 /* sou2-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou2-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9A1F277707003816E5 /* sou3-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou3-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9B1F277707003816E5 /* sou4-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou4-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9C1F277708003816E5 /* sou5-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou5-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9D1F277708003816E5 /* sou6-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou6-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9E1F277708003816E5 /* sou7-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou7-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0C9F1F277708003816E5 /* sou8-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou8-66-90-s-emb.png"; sourceTree = "<group>"; };
+		553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou9-66-90-s-emb.png"; sourceTree = "<group>"; };
+		555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgariHantei.swift; sourceTree = "<group>"; };
+		555BFE971F2B01ED005EF9D8 /* SetDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553F0C0A1F275519003816E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C1E1F275519003816E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C291F275519003816E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553F0C041F275519003816E5 = {
+			isa = PBXGroup;
+			children = (
+				553F0C0F1F275519003816E5 /* MajanPlatform */,
+				553F0C241F275519003816E5 /* MajanPlatformTests */,
+				553F0C2F1F275519003816E5 /* MajanPlatformUITests */,
+				553F0C0E1F275519003816E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		553F0C0E1F275519003816E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553F0C0D1F275519003816E5 /* MajanPlatform.app */,
+				553F0C211F275519003816E5 /* MajanPlatformTests.xctest */,
+				553F0C2C1F275519003816E5 /* MajanPlatformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553F0C0F1F275519003816E5 /* MajanPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				553F0C861F277707003816E5 /* man1-66-90-s-emb.png */,
+				553F0C871F277707003816E5 /* man2-66-90-s-emb.png */,
+				553F0C881F277707003816E5 /* man3-66-90-s-emb.png */,
+				553F0C891F277707003816E5 /* man4-66-90-s-emb.png */,
+				553F0C8A1F277707003816E5 /* man5-66-90-s-emb.png */,
+				553F0C8B1F277707003816E5 /* man6-66-90-s-emb.png */,
+				553F0C8C1F277707003816E5 /* man7-66-90-s-emb.png */,
+				553F0C8D1F277707003816E5 /* man8-66-90-s-emb.png */,
+				553F0C8E1F277707003816E5 /* man9-66-90-s-emb.png */,
+				553F0C8F1F277707003816E5 /* pin1-66-90-s-emb.png */,
+				553F0C901F277707003816E5 /* pin2-66-90-s-emb.png */,
+				553F0C911F277707003816E5 /* pin3-66-90-s-emb.png */,
+				553F0C921F277707003816E5 /* pin4-66-90-s-emb.png */,
+				553F0C931F277707003816E5 /* pin5-66-90-s-emb.png */,
+				553F0C941F277707003816E5 /* pin6-66-90-s-emb.png */,
+				553F0C951F277707003816E5 /* pin7-66-90-s-emb.png */,
+				553F0C961F277707003816E5 /* pin8-66-90-s-emb.png */,
+				553F0C971F277707003816E5 /* pin9-66-90-s-emb.png */,
+				553F0C981F277707003816E5 /* sou1-66-90-s-emb.png */,
+				553F0C991F277707003816E5 /* sou2-66-90-s-emb.png */,
+				553F0C9A1F277707003816E5 /* sou3-66-90-s-emb.png */,
+				553F0C9B1F277707003816E5 /* sou4-66-90-s-emb.png */,
+				553F0C9C1F277708003816E5 /* sou5-66-90-s-emb.png */,
+				553F0C9D1F277708003816E5 /* sou6-66-90-s-emb.png */,
+				553F0C9E1F277708003816E5 /* sou7-66-90-s-emb.png */,
+				553F0C9F1F277708003816E5 /* sou8-66-90-s-emb.png */,
+				553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */,
+				553F0C841F2764D7003816E5 /* ji6-66-90-s-yoko-emb.png */,
+				553F0C441F276423003816E5 /* ji3-66-90-s-emb.png */,
+				553F0C451F276423003816E5 /* ji4-66-90-s-emb.png */,
+				553F0C461F276423003816E5 /* ji5-66-90-s-emb.png */,
+				553F0C481F276423003816E5 /* ji7-66-90-s-emb.png */,
+				553F0C421F2763F9003816E5 /* ji2-66-90-s-emb.png */,
+				553F0C401F27606A003816E5 /* ji1-66-90-s-emb.png */,
+				553F0C101F275519003816E5 /* AppDelegate.swift */,
+				553F0C121F275519003816E5 /* ViewController.swift */,
+				553F0C141F275519003816E5 /* Main.storyboard */,
+				553F0C171F275519003816E5 /* Assets.xcassets */,
+				553F0C191F275519003816E5 /* LaunchScreen.storyboard */,
+				553F0C1C1F275519003816E5 /* Info.plist */,
+				553959BE1F2A022400FDDE7A /* PaiSet.swift */,
+				555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */,
+				555BFE971F2B01ED005EF9D8 /* SetDetails.swift */,
+			);
+			path = MajanPlatform;
+			sourceTree = "<group>";
+		};
+		553F0C241F275519003816E5 /* MajanPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				553F0C251F275519003816E5 /* MajanPlatformTests.swift */,
+				553F0C271F275519003816E5 /* Info.plist */,
+			);
+			path = MajanPlatformTests;
+			sourceTree = "<group>";
+		};
+		553F0C2F1F275519003816E5 /* MajanPlatformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				553F0C301F275519003816E5 /* MajanPlatformUITests.swift */,
+				553F0C321F275519003816E5 /* Info.plist */,
+			);
+			path = MajanPlatformUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553F0C0C1F275519003816E5 /* MajanPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F0C351F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatform" */;
+			buildPhases = (
+				553F0C091F275519003816E5 /* Sources */,
+				553F0C0A1F275519003816E5 /* Frameworks */,
+				553F0C0B1F275519003816E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MajanPlatform;
+			productName = MajanPlatform;
+			productReference = 553F0C0D1F275519003816E5 /* MajanPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		553F0C201F275519003816E5 /* MajanPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F0C381F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatformTests" */;
+			buildPhases = (
+				553F0C1D1F275519003816E5 /* Sources */,
+				553F0C1E1F275519003816E5 /* Frameworks */,
+				553F0C1F1F275519003816E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F0C231F275519003816E5 /* PBXTargetDependency */,
+			);
+			name = MajanPlatformTests;
+			productName = MajanPlatformTests;
+			productReference = 553F0C211F275519003816E5 /* MajanPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553F0C2B1F275519003816E5 /* MajanPlatformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553F0C3B1F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatformUITests" */;
+			buildPhases = (
+				553F0C281F275519003816E5 /* Sources */,
+				553F0C291F275519003816E5 /* Frameworks */,
+				553F0C2A1F275519003816E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553F0C2E1F275519003816E5 /* PBXTargetDependency */,
+			);
+			name = MajanPlatformUITests;
+			productName = MajanPlatformUITests;
+			productReference = 553F0C2C1F275519003816E5 /* MajanPlatformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553F0C051F275519003816E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Komatsu;
+				TargetAttributes = {
+					553F0C0C1F275519003816E5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					553F0C201F275519003816E5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 553F0C0C1F275519003816E5;
+					};
+					553F0C2B1F275519003816E5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 553F0C0C1F275519003816E5;
+					};
+				};
+			};
+			buildConfigurationList = 553F0C081F275519003816E5 /* Build configuration list for PBXProject "MajanPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 553F0C041F275519003816E5;
+			productRefGroup = 553F0C0E1F275519003816E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				553F0C0C1F275519003816E5 /* MajanPlatform */,
+				553F0C201F275519003816E5 /* MajanPlatformTests */,
+				553F0C2B1F275519003816E5 /* MajanPlatformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553F0C0B1F275519003816E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F0CB81F277708003816E5 /* sou6-66-90-s-emb.png in Resources */,
+				553F0CB91F277708003816E5 /* sou7-66-90-s-emb.png in Resources */,
+				553F0CBB1F277708003816E5 /* sou9-66-90-s-emb.png in Resources */,
+				553F0CA31F277708003816E5 /* man3-66-90-s-emb.png in Resources */,
+				553F0C681F276423003816E5 /* ji7-66-90-s-emb.png in Resources */,
+				553F0CB61F277708003816E5 /* sou4-66-90-s-emb.png in Resources */,
+				553F0C1B1F275519003816E5 /* LaunchScreen.storyboard in Resources */,
+				553F0CB01F277708003816E5 /* pin7-66-90-s-emb.png in Resources */,
+				553F0CAE1F277708003816E5 /* pin5-66-90-s-emb.png in Resources */,
+				553F0CAB1F277708003816E5 /* pin2-66-90-s-emb.png in Resources */,
+				553F0CAF1F277708003816E5 /* pin6-66-90-s-emb.png in Resources */,
+				553F0CB71F277708003816E5 /* sou5-66-90-s-emb.png in Resources */,
+				553F0CA81F277708003816E5 /* man8-66-90-s-emb.png in Resources */,
+				553F0CA51F277708003816E5 /* man5-66-90-s-emb.png in Resources */,
+				553F0CA71F277708003816E5 /* man7-66-90-s-emb.png in Resources */,
+				553F0CBA1F277708003816E5 /* sou8-66-90-s-emb.png in Resources */,
+				553F0CB41F277708003816E5 /* sou2-66-90-s-emb.png in Resources */,
+				553F0CA11F277708003816E5 /* man1-66-90-s-emb.png in Resources */,
+				553F0CB31F277708003816E5 /* sou1-66-90-s-emb.png in Resources */,
+				553F0C651F276423003816E5 /* ji4-66-90-s-emb.png in Resources */,
+				553F0C181F275519003816E5 /* Assets.xcassets in Resources */,
+				553F0CA21F277708003816E5 /* man2-66-90-s-emb.png in Resources */,
+				553F0C411F27606A003816E5 /* ji1-66-90-s-emb.png in Resources */,
+				553F0CA61F277708003816E5 /* man6-66-90-s-emb.png in Resources */,
+				553F0C851F2764D7003816E5 /* ji6-66-90-s-yoko-emb.png in Resources */,
+				553F0CA41F277708003816E5 /* man4-66-90-s-emb.png in Resources */,
+				553F0CAD1F277708003816E5 /* pin4-66-90-s-emb.png in Resources */,
+				553F0CB51F277708003816E5 /* sou3-66-90-s-emb.png in Resources */,
+				553F0CB21F277708003816E5 /* pin9-66-90-s-emb.png in Resources */,
+				553F0CAC1F277708003816E5 /* pin3-66-90-s-emb.png in Resources */,
+				553F0C161F275519003816E5 /* Main.storyboard in Resources */,
+				553F0CA91F277708003816E5 /* man9-66-90-s-emb.png in Resources */,
+				553F0C641F276423003816E5 /* ji3-66-90-s-emb.png in Resources */,
+				553F0C661F276423003816E5 /* ji5-66-90-s-emb.png in Resources */,
+				553F0C431F2763F9003816E5 /* ji2-66-90-s-emb.png in Resources */,
+				553F0CB11F277708003816E5 /* pin8-66-90-s-emb.png in Resources */,
+				553F0CAA1F277708003816E5 /* pin1-66-90-s-emb.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C1F1F275519003816E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C2A1F275519003816E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553F0C091F275519003816E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F0C131F275519003816E5 /* ViewController.swift in Sources */,
+				555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */,
+				555BFE981F2B01ED005EF9D8 /* SetDetails.swift in Sources */,
+				553F0C111F275519003816E5 /* AppDelegate.swift in Sources */,
+				553959BF1F2A022400FDDE7A /* PaiSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C1D1F275519003816E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F0C261F275519003816E5 /* MajanPlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553F0C281F275519003816E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553F0C311F275519003816E5 /* MajanPlatformUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		553F0C231F275519003816E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F0C0C1F275519003816E5 /* MajanPlatform */;
+			targetProxy = 553F0C221F275519003816E5 /* PBXContainerItemProxy */;
+		};
+		553F0C2E1F275519003816E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553F0C0C1F275519003816E5 /* MajanPlatform */;
+			targetProxy = 553F0C2D1F275519003816E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		553F0C141F275519003816E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				553F0C151F275519003816E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		553F0C191F275519003816E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				553F0C1A1F275519003816E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		553F0C331F275519003816E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		553F0C341F275519003816E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		553F0C361F275519003816E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MajanPlatform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		553F0C371F275519003816E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MajanPlatform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		553F0C391F275519003816E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MajanPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajanPlatform.app/MajanPlatform";
+			};
+			name = Debug;
+		};
+		553F0C3A1F275519003816E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MajanPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajanPlatform.app/MajanPlatform";
+			};
+			name = Release;
+		};
+		553F0C3C1F275519003816E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MajanPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MajanPlatform;
+			};
+			name = Debug;
+		};
+		553F0C3D1F275519003816E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MajanPlatformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chiba.Komatsu.MajanPlatformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MajanPlatform;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553F0C081F275519003816E5 /* Build configuration list for PBXProject "MajanPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F0C331F275519003816E5 /* Debug */,
+				553F0C341F275519003816E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F0C351F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F0C361F275519003816E5 /* Debug */,
+				553F0C371F275519003816E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F0C381F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F0C391F275519003816E5 /* Debug */,
+				553F0C3A1F275519003816E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553F0C3B1F275519003816E5 /* Build configuration list for PBXNativeTarget "MajanPlatformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553F0C3C1F275519003816E5 /* Debug */,
+				553F0C3D1F275519003816E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 553F0C051F275519003816E5 /* Project object */;
+}
