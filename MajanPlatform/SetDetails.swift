@@ -194,6 +194,112 @@ class SetDetails: UIViewController {
                     ans = yakuPt
                     now = ten
                 }
+            } else if pai.count == 1 {
+                // 特殊系の処理
+                var x = 0
+                let jiArea = [27,28,29,30,31,32,33]
+                for i in pai[0] {
+                    if jiArea.contains(i) {
+                        x += 1
+                    }
+                }
+                var yaku = [Int](repeating:0, count:81)
+                if x == 7 {
+                    yaku[19] = 1
+                }
+                if x == 6 {
+                    yaku[33] = 1
+                }
+                if x == 5 {
+                    yaku[33] = 1
+                    yaku[34] = 1
+                }
+                if kanshanHow.isOn {
+                    yaku[45] = 1
+                }
+                if tyankanHow.isOn {
+                    yaku[46] = 1
+                }
+                if myaoshaoHow.isOn {
+                    yaku[43] = 1
+                }
+                if haiteiHow.isOn {
+                    yaku[44] = 1
+                }
+                if zecchoHow.isOn {
+                    yaku[58] = 1
+                }
+                let yakuPt = henkan(yaku: yaku)
+                var ten = 0
+                for (_, pt) in yakuPt {
+                    ten += pt
+                }
+                // 高天法の処理
+                if ten >= now {
+                    ans = yakuPt
+                    now = ten
+                }
+            } else if pai.count == 3 {
+                // ツーハーロンの処理
+                // kataを調べる
+                var kata = -1
+                if pai[1][1] - pai[1][0] == 1 {
+                    kata = 0
+                } else if pai[1].count == 3{
+                    kata = 1
+                } else {
+                    kata = 2
+                }
+                
+                var man = [Int](), pin = [Int](), sou = [Int](), ji = [Int]()
+                for i in 0...33 {
+                    if i <= 8 {
+                        man.append(all[i])
+                    } else if i <= 17 {
+                        pin.append(all[i])
+                    } else if i <= 26 {
+                        sou.append(all[i])
+                    } else if i <= 33 {
+                        ji.append(all[i])
+                    }
+                }
+                
+                // 風の設定
+                let ba = baHow.selectedSegmentIndex
+                let ie = ieHow.selectedSegmentIndex
+                let tuharonCheck:Tuharon
+                if nakiMentsu.isEmpty {
+                    tuharonCheck = Tuharon(a: all, m: man, p: pin, s: sou, j: ji, m1: pai[1], k1: kata, h: pai[0][0], n: naki[0], n2: [], t: tumoHow.isOn , b: ba, i: ie, w: mati, tuharon: pai[2])
+                } else {
+                
+                    tuharonCheck = Tuharon(a: all, m: man, p: pin, s: sou, j: ji, m1: pai[1], k1: kata, h: pai[0][0], n: naki[0], n2: nakiMentsu[0], t: tumoHow.isOn , b: ba, i: ie, w: mati, tuharon: pai[2])
+                }
+                var yaku = tuharonCheck.check()
+                if kanshanHow.isOn {
+                    yaku[45] = 1
+                }
+                if tyankanHow.isOn {
+                    yaku[46] = 1
+                }
+                if myaoshaoHow.isOn {
+                    yaku[43] = 1
+                }
+                if haiteiHow.isOn {
+                    yaku[44] = 1
+                }
+                if zecchoHow.isOn {
+                    yaku[58] = 1
+                }
+                let yakuPt = henkan(yaku: yaku)
+                var ten = 0
+                for (_, pt) in yakuPt {
+                    ten += pt
+                }
+                // 高天法の処理
+                if ten >= now {
+                    ans = yakuPt
+                    now = ten
+                }
             }
         }
         
