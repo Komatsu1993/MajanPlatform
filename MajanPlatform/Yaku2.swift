@@ -45,8 +45,16 @@ class Yaku2 {
     
     // 62,メンゼンチン : 引数 naki, tumo
     func menzenchin(n:[Bool], t:Bool)->() {
-        if yaku[62] != -1, !n[0], !n[1], !n[2], !n[3], !t {
-            yaku[62] = 1
+        if yaku[62] != -1 {
+            var x = 0
+            for i in n {
+                if !i {
+                    x += 1
+                }
+            }
+            if x == 3 {
+                yaku[62] = 1
+            }
         }
     }
     

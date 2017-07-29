@@ -67,7 +67,6 @@ class SetDetails: UIViewController {
     // 次の画面に送る処理,役と点数を調べる
     // 点数を送る
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let tes = segue.destination as! Kekka
         
         var ans = [String: Int]()  // 数値で表した役を入れる、次の画面へ送る
         var now = -1       // 現在の最高得点、高点法に使う
@@ -103,6 +102,15 @@ class SetDetails: UIViewController {
                 // 風の設定
                 let ba = baHow.selectedSegmentIndex
                 let ie = ieHow.selectedSegmentIndex
+                // 待ち牌絡みの面子は鳴きを設定
+                if !tumoHow.isOn {
+                    for i in 1...4 {
+                        if pai[i].contains(mati), !naki[i - 1] {
+                            naki[i - 1] = true
+                            break
+                        }
+                    }
+                }
                 
                 let check = CheckYaku(m1: pai[1], m2: pai[2], m3: pai[3], m4: pai[4], h: pai[0][0], k1: kata[0], k2: kata[1], k3: kata[2], k4: kata[3], m: man, p: pin, s: sou, j: ji, a: all, n: naki, n2: nakiMentsu, t: tumoHow.isOn, b: ba, i: ie, w: mati)
                 var yaku = check.check()
@@ -142,11 +150,17 @@ class SetDetails: UIViewController {
                     now = ten
                 }
         
+            } else if pai.count == 7 {
+                // 対子系の処理
             }
         }
         
-        tes.tenPt = ans
-        tes.pt = now
+        if segue.identifier == "toKekka" {
+            let tes = segue.destination as! Kekka
+            tes.tenPt = ans
+            tes.pt = now
+        }
+
     }
     
     // 上がり役の数値から役名とその点数からなる辞書を作る

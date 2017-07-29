@@ -354,7 +354,6 @@ class PaiSet: UIViewController {
     // 引数を次の画面へ渡す処理
     // 上がりに問題がない時のみ遷移し、そうでなければアラート
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let tes = segue.destination as! SetDetails
         
         var errorCheck = 0      // この値が0の時のみ正常
         
@@ -398,6 +397,7 @@ class PaiSet: UIViewController {
         
         if segue.identifier == "toDetail" {
             
+            let tes = segue.destination as! SetDetails
             if mentsu.isEmpty || nowMati == -1 {
                 present(alert, animated: true, completion: nil)
                 print("アラート処理")
