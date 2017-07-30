@@ -117,7 +117,7 @@ class PaiSet: UIViewController {
     @IBAction func reset(_ sender: Any) {
         now = 0
         for i in 0...nowMen - 1 {
-            pais[i].setImage(#imageLiteral(resourceName: "ji1-66-90-s-emb.png"), for: .normal);
+            pais[i].setImage(#imageLiteral(resourceName: "defaultPai.png"), for: .normal);
         }
         nowMen = 0
         naki = [String]()
@@ -129,6 +129,8 @@ class PaiSet: UIViewController {
         nakiNum = 0
         kanNum = 0
         henkanDic = [UIImage:Int]()
+        nowMati = -1
+        matiPai.setImage(#imageLiteral(resourceName: "defaultPai.png"), for: .normal)
         
     }
     

@@ -73,6 +73,7 @@ class SetDetails: UIViewController {
         
         // 各上がり系の役判定に入る
         for pai in agari {
+            var pai = pai
             // まず面子系の場合
             if pai.count == 5 {
                 // 上がり系の設定
@@ -111,6 +112,20 @@ class SetDetails: UIViewController {
                         }
                     }
                 }
+                
+                // 各面子を小さい順にならべかえる、型と鳴きもそれに応じてならべかえる
+                for i in 1...4 {
+                    for j in i...4 {
+                        if pai[i][0] > pai[j][0] {
+                            let kariArray = pai[i]
+                            pai[i] = pai[j]
+                            pai[j] = kariArray
+                            (naki[i - 1], naki[j - 1]) = (naki[j - 1], naki[i - 1])
+                            (kata[i - 1], kata[j - 1]) = (kata[j - 1], kata[i - 1])
+                        }
+                    }
+                }
+                
                 
                 let check = CheckYaku(m1: pai[1], m2: pai[2], m3: pai[3], m4: pai[4], h: pai[0][0], k1: kata[0], k2: kata[1], k3: kata[2], k4: kata[3], m: man, p: pin, s: sou, j: ji, a: all, n: naki, n2: nakiMentsu, t: tumoHow.isOn, b: ba, i: ie, w: mati)
                 var yaku = check.check()

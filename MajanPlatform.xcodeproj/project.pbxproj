@@ -49,6 +49,7 @@
 		553F0CB91F277708003816E5 /* sou7-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9E1F277708003816E5 /* sou7-66-90-s-emb.png */; };
 		553F0CBA1F277708003816E5 /* sou8-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0C9F1F277708003816E5 /* sou8-66-90-s-emb.png */; };
 		553F0CBB1F277708003816E5 /* sou9-66-90-s-emb.png in Resources */ = {isa = PBXBuildFile; fileRef = 553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */; };
+		5546038F1F2DA29100930EA8 /* defaultPai.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546038E1F2DA29100930EA8 /* defaultPai.png */; };
 		5559DBC31F2CED6900E01C66 /*  Toitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559DBC21F2CED6900E01C66 /*  Toitu.swift */; };
 		5559DBC51F2CF9CA00E01C66 /* Tuharon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */; };
 		555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */; };
@@ -135,6 +136,7 @@
 		553F0C9E1F277708003816E5 /* sou7-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou7-66-90-s-emb.png"; sourceTree = "<group>"; };
 		553F0C9F1F277708003816E5 /* sou8-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou8-66-90-s-emb.png"; sourceTree = "<group>"; };
 		553F0CA01F277708003816E5 /* sou9-66-90-s-emb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou9-66-90-s-emb.png"; sourceTree = "<group>"; };
+		5546038E1F2DA29100930EA8 /* defaultPai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPai.png; sourceTree = "<group>"; };
 		5559DBC21F2CED6900E01C66 /*  Toitu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " Toitu.swift"; sourceTree = "<group>"; };
 		5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuharon.swift; sourceTree = "<group>"; };
 		555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgariHantei.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				553F0C481F276423003816E5 /* ji7-66-90-s-emb.png */,
 				553F0C421F2763F9003816E5 /* ji2-66-90-s-emb.png */,
 				553F0C401F27606A003816E5 /* ji1-66-90-s-emb.png */,
+				5546038E1F2DA29100930EA8 /* defaultPai.png */,
 				553F0C101F275519003816E5 /* AppDelegate.swift */,
 				553F0C121F275519003816E5 /* ViewController.swift */,
 				553F0C141F275519003816E5 /* Main.storyboard */,
@@ -422,6 +425,7 @@
 				553F0CB51F277708003816E5 /* sou3-66-90-s-emb.png in Resources */,
 				553F0CB21F277708003816E5 /* pin9-66-90-s-emb.png in Resources */,
 				553F0CAC1F277708003816E5 /* pin3-66-90-s-emb.png in Resources */,
+				5546038F1F2DA29100930EA8 /* defaultPai.png in Resources */,
 				553F0C161F275519003816E5 /* Main.storyboard in Resources */,
 				553F0CA91F277708003816E5 /* man9-66-90-s-emb.png in Resources */,
 				553F0C641F276423003816E5 /* ji3-66-90-s-emb.png in Resources */,

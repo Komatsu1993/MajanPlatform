@@ -43,8 +43,8 @@ class Yaku2 {
         }
     }
     
-    // 62,メンゼンチン : 引数 naki, tumo
-    func menzenchin(n:[Bool], t:Bool)->() {
+    // 62,メンゼンチン : 引数 naki, tumo, head, mati
+    func menzenchin(n:[Bool], t:Bool, h:Int, w:Int)->() {
         if yaku[62] != -1 {
             var x = 0
             for i in n {
@@ -52,7 +52,9 @@ class Yaku2 {
                     x += 1
                 }
             }
-            if x == 3 {
+            
+            // 面子エリアの牌でで上がった場合、門前面子は３つしかないことに注意
+            if (x == 3 && h != w) || x == 4 {
                 yaku[62] = 1
             }
         }

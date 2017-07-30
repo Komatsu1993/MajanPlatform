@@ -141,7 +141,7 @@ class CheckYaku {
         x2.chenku(j: ji)
         x2.chenfonku(b: ba, j: ji)
         x2.menfonku(i: ie, j: ji)
-        x2.menzenchin(n: naki, t: tumo)
+        x2.menzenchin(n: naki, t: tumo, h: head, w: mati)
         x2.pinhu(k1: kata1, k2: kata2, k3: kata3, k4: kata4, h: head)
         x2.sukui(k1: kata1, k2: kata2, k3: kata3, k4: kata4, a: all)
         x2.shantonku(k1: kata1, k2: kata2, k3: kata3, k4: kata4, m1: men1, m2: men2, m3: men3, m4: men4)

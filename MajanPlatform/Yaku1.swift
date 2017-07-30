@@ -152,6 +152,11 @@ class Yaku1 {
         var a = a
         a[w] -= 1
         var check = 0
+        for mentsu in n2 {
+            for j in mentsu {
+                a[j] -= 1
+            }
+        }
         for i in 0...33 {
             a[i] += 1
             let x = AgariHantei(n: n2)

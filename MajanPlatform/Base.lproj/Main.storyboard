@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -364,98 +364,98 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-47-5Ah">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati1:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="iPF-An-A4Y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-bS-zkY">
                                         <rect key="frame" x="32" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati2:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="KBx-Zb-9Hp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usc-mi-hqO">
                                         <rect key="frame" x="64" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati3:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="q5D-u9-bfC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBg-aj-DGV">
                                         <rect key="frame" x="96" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati4:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="Yue-um-wX7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-RU-m4U">
                                         <rect key="frame" x="128" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati5:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="zac-Fm-kZa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm5-dU-her">
                                         <rect key="frame" x="160" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati6:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="vBJ-8H-F68"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-LA-gfr">
                                         <rect key="frame" x="192" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati7:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="OsE-sl-fuQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-S3-HYo">
                                         <rect key="frame" x="224" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati8:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="y8e-Zk-v9Y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZc-74-PrX">
                                         <rect key="frame" x="256" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati9:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="X0y-I6-pWt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dC-sz-YcG">
                                         <rect key="frame" x="288" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati10:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="CVr-Cp-9g3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYN-Qj-8eV">
                                         <rect key="frame" x="320" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati11:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="dsc-Tx-zQz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-Tw-p6M">
                                         <rect key="frame" x="352" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati12:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="oMG-NF-qnI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVP-s6-LhL">
                                         <rect key="frame" x="384" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati13:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="46L-4J-CKe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whD-ve-M1Z">
                                         <rect key="frame" x="416" y="0.0" width="32" height="45"/>
-                                        <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                        <state key="normal" image="defaultPai.png"/>
                                         <connections>
                                             <action selector="mati14:" destination="Rrg-Wh-FF1" eventType="touchUpInside" id="caU-XQ-1JS"/>
                                         </connections>
@@ -529,7 +529,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-HK-VaZ">
                                 <rect key="frame" x="395" y="142" width="32" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ji1-66-90-s-emb.png"/>
+                                <state key="normal" image="defaultPai.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="待ち牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gL-RG-TM0">
                                 <rect key="frame" x="485" y="158" width="52" height="21"/>
@@ -799,6 +799,9 @@
                                 <rect key="frame" x="381" y="325" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="タイトルへ"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="xcq-LC-zao"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -811,10 +814,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMD-TK-1eJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="G3N-IB-LCg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1889.5052473763119" y="21.600000000000001"/>
+            <point key="canvasLocation" x="441" y="900"/>
         </scene>
     </scenes>
     <resources>
+        <image name="defaultPai.png" width="32" height="45"/>
         <image name="ji1-66-90-s-emb.png" width="32" height="45"/>
         <image name="ji2-66-90-s-emb.png" width="32" height="45"/>
         <image name="ji3-66-90-s-emb.png" width="32" height="45"/>
