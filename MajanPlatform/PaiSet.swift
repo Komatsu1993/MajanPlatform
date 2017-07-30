@@ -254,6 +254,7 @@ class PaiSet: UIViewController {
     var nowMati = -1            // 今待ち牌が選択されているかどうかのチェック
     
     var henkanDic = [UIImage:Int]()     // 画像からその牌を得るために使う辞書
+    var nakiImage = [[UIButton]]()      // 鳴き牌の表示用ボタン
     
     // 点数処理のための変数
     var all = [Int](repeating:0, count:34)       // 全ての牌姿
@@ -280,9 +281,9 @@ class PaiSet: UIViewController {
         // Do any additional setup after loading the view.
         
         pais = [self.pai1, self.pai2, self.pai3, self.pai4, self.pai5, self.pai6, self.pai7, self.pai8, self.pai9, self.pai10, self.pai11, self.pai12, self.pai13, self.pai14]
-        nakiPai.text = makeStr(str: naki)
         
         // 鳴き牌表示用のボタンの配列を作る
+        nakiImage = [[naki1_1, naki1_2, naki1_3, naki1_4], [naki2_1, naki2_2, naki2_3, naki2_4], [naki3_1, naki3_2, naki3_3, naki3_4], [naki4_1, naki4_2, naki4_3, naki4_4]]
         
     }
 
@@ -344,27 +345,47 @@ class PaiSet: UIViewController {
     func makeRow(p:UIImage, tiPai:String, ponPai:String, kanPai:String, aPai:Int)->() {
         if now < 14 {
             if ti.isOn {
-                if tiPai != "N" {
-                    naki.append(tiPai); nakiPai.text = makeStr(str: naki); now += 3
+                if tiPai != "N", nakiNum < 4 {
+                    naki.append(tiPai); now += 3
                     all[aPai] += 1; all[aPai + 1] += 1; all[aPai + 2] += 1;
                     nakiMentsu.append([aPai, aPai + 1, aPai + 2])
+                    nakiImage[nakiNum][0].setImage(henkanImage(num: aPai, muki: 1), for: .normal)
+                    nakiImage[nakiNum][1].setImage(henkanImage(num: aPai + 1, muki: 0), for: .normal)
+                    nakiImage[nakiNum][2].setImage(henkanImage(num: aPai + 2, muki: 0), for: .normal)
                     kui[nakiNum] = true; nakiNum += 1;
                 }
             } else if pon.isOn {
-                naki.append(ponPai); nakiPai.text = makeStr(str: naki); now += 3
-                all[aPai] += 3
-                nakiMentsu.append([aPai, aPai, aPai])
-                kui[nakiNum] = true; nakiNum += 1;
+                if nakiNum < 4 {
+                    naki.append(ponPai);now += 3
+                    all[aPai] += 3
+                    nakiMentsu.append([aPai, aPai, aPai])
+                    nakiImage[nakiNum][0].setImage(henkanImage(num: aPai, muki: 1), for: .normal)
+                    nakiImage[nakiNum][1].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    nakiImage[nakiNum][2].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    kui[nakiNum] = true; nakiNum += 1;
+                }
             } else if minkan.isOn {
-                naki.append(kanPai); nakiPai.text = makeStr(str: naki); now += 3
-                all[aPai] += 4; kanNum += 1;
-                nakiMentsu.append([aPai, aPai, aPai, aPai])
-                kui[nakiNum] = true; nakiNum += 1;
+                if nakiNum < 4 {
+                    naki.append(kanPai); now += 3
+                    all[aPai] += 4; kanNum += 1;
+                    nakiMentsu.append([aPai, aPai, aPai, aPai])
+                    nakiImage[nakiNum][0].setImage(henkanImage(num: aPai, muki: 1), for: .normal)
+                    nakiImage[nakiNum][1].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    nakiImage[nakiNum][2].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    nakiImage[nakiNum][3].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    kui[nakiNum] = true; nakiNum += 1;
+                }
             } else if ankan.isOn {
-                naki.append(kanPai); nakiPai.text = makeStr(str: naki); now += 3
-                all[aPai] += 4; kanNum += 1;
-                nakiMentsu.append([aPai, aPai, aPai, aPai])
-                kui[nakiNum] = false; nakiNum += 1;
+                if nakiNum < 4 {
+                    naki.append(kanPai); now += 3
+                    all[aPai] += 4; kanNum += 1;
+                    nakiMentsu.append([aPai, aPai, aPai, aPai])
+                    nakiImage[nakiNum][0].setImage(#imageLiteral(resourceName: "ankanUra.png"), for: .normal)
+                    nakiImage[nakiNum][1].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    nakiImage[nakiNum][2].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
+                    nakiImage[nakiNum][3].setImage(#imageLiteral(resourceName: "ankanUra.png"), for: .normal)
+                    kui[nakiNum] = false; nakiNum += 1;
+                }
             } else {
                 pais[nowMen].setImage(p, for: .normal); now += 1; nowMen += 1; all[aPai] += 1;
             }
@@ -438,14 +459,14 @@ class PaiSet: UIViewController {
     // 戻り値は画像
     func henkanImage(num:Int, muki: Int) -> UIImage {
         var x = #imageLiteral(resourceName: "default-shrink.png")
-        let shrink: [UIImage] = [#imageLiteral(resourceName: "ji1-shurink.png"), #imageLiteral(resourceName: "ji2-shrink.png"), #imageLiteral(resourceName: "ji3-shrink.png"), #imageLiteral(resourceName: "ji4-shrink.png"), #imageLiteral(resourceName: "ji6-shrink.png"),#imageLiteral(resourceName: "ji5-shrink.png") , #imageLiteral(resourceName: "ji7-shrink.png"),
-                                #imageLiteral(resourceName: "man1-shrink.png"), #imageLiteral(resourceName: "man2-shrink.png"), #imageLiteral(resourceName: "man3-shrink.png"), #imageLiteral(resourceName: "man4-shrink.png"), #imageLiteral(resourceName: "man5-shrink.png"), #imageLiteral(resourceName: "man6-shrink.png"), #imageLiteral(resourceName: "man7-shrink.png"), #imageLiteral(resourceName: "man8-shrink.png"), #imageLiteral(resourceName: "man9-shrink.png"),
+        let shrink: [UIImage] = [#imageLiteral(resourceName: "man1-shrink.png"), #imageLiteral(resourceName: "man2-shrink.png"), #imageLiteral(resourceName: "man3-shrink.png"), #imageLiteral(resourceName: "man4-shrink.png"), #imageLiteral(resourceName: "man5-shrink.png"), #imageLiteral(resourceName: "man6-shrink.png"), #imageLiteral(resourceName: "man7-shrink.png"), #imageLiteral(resourceName: "man8-shrink.png"), #imageLiteral(resourceName: "man9-shrink.png"),
                                 #imageLiteral(resourceName: "pin1-shrink.png"), #imageLiteral(resourceName: "pin2-shrink.png"), #imageLiteral(resourceName: "pin3-shrink.png"), #imageLiteral(resourceName: "pin4-shrink.png"), #imageLiteral(resourceName: "pin5-shrink.png"), #imageLiteral(resourceName: "pin6-shrink.png"), #imageLiteral(resourceName: "pin7-shrink.png"), #imageLiteral(resourceName: "pin8-shrink.png"), #imageLiteral(resourceName: "pin9-shrink.png"),
-                                #imageLiteral(resourceName: "sou1-shrink.png"), #imageLiteral(resourceName: "sou2-shrink.png"), #imageLiteral(resourceName: "sou3-shrink.png"), #imageLiteral(resourceName: "sou4-shrink.png"), #imageLiteral(resourceName: "sou5-shrink.png"), #imageLiteral(resourceName: "sou6-shrink.png"), #imageLiteral(resourceName: "sou7-shrink.png"), #imageLiteral(resourceName: "sou8-shrink.png"), #imageLiteral(resourceName: "sou9-shrink.png")]
-        let yoko: [UIImage] = [#imageLiteral(resourceName: "ji1-yoko.png"), #imageLiteral(resourceName: "ji2-yoko.png"), #imageLiteral(resourceName: "ji3-yoko.png"), #imageLiteral(resourceName: "ji4-yoko.png"), #imageLiteral(resourceName: "ji6-yoko.png"), #imageLiteral(resourceName: "ji5-yoko.png"), #imageLiteral(resourceName: "ji7-yoko.png"),
-                               #imageLiteral(resourceName: "man1-yoko.png"), #imageLiteral(resourceName: "man2-yoko.png"), #imageLiteral(resourceName: "man3-yoko.png"), #imageLiteral(resourceName: "man4-yoko.png"), #imageLiteral(resourceName: "man5-yoko.png"), #imageLiteral(resourceName: "man6-yoko.png"), #imageLiteral(resourceName: "man7-yoko.png"), #imageLiteral(resourceName: "man8-yoko.png"), #imageLiteral(resourceName: "man9-yoko.png"),
+                                #imageLiteral(resourceName: "sou1-shrink.png"), #imageLiteral(resourceName: "sou2-shrink.png"), #imageLiteral(resourceName: "sou3-shrink.png"), #imageLiteral(resourceName: "sou4-shrink.png"), #imageLiteral(resourceName: "sou5-shrink.png"), #imageLiteral(resourceName: "sou6-shrink.png"), #imageLiteral(resourceName: "sou7-shrink.png"), #imageLiteral(resourceName: "sou8-shrink.png"), #imageLiteral(resourceName: "sou9-shrink.png"),
+                                #imageLiteral(resourceName: "ji1-shurink.png"), #imageLiteral(resourceName: "ji2-shrink.png"), #imageLiteral(resourceName: "ji3-shrink.png"), #imageLiteral(resourceName: "ji4-shrink.png"), #imageLiteral(resourceName: "ji6-shrink.png"),#imageLiteral(resourceName: "ji5-shrink.png") , #imageLiteral(resourceName: "ji7-shrink.png"),]
+        let yoko: [UIImage] = [#imageLiteral(resourceName: "man1-yoko.png"), #imageLiteral(resourceName: "man2-yoko.png"), #imageLiteral(resourceName: "man3-yoko.png"), #imageLiteral(resourceName: "man4-yoko.png"), #imageLiteral(resourceName: "man5-yoko.png"), #imageLiteral(resourceName: "man6-yoko.png"), #imageLiteral(resourceName: "man7-yoko.png"), #imageLiteral(resourceName: "man8-yoko.png"), #imageLiteral(resourceName: "man9-yoko.png"),
                                #imageLiteral(resourceName: "pin1-yoko.png"), #imageLiteral(resourceName: "pin2-yoko.png"), #imageLiteral(resourceName: "pin3-yoko.png"), #imageLiteral(resourceName: "pin4-yoko.png"), #imageLiteral(resourceName: "pin5-yoko.png"), #imageLiteral(resourceName: "pin6-yoko.png"), #imageLiteral(resourceName: "pin7-yoko.png"), #imageLiteral(resourceName: "pin8-yoko.png"), #imageLiteral(resourceName: "pin9-yoko.png"),
-                               #imageLiteral(resourceName: "sou1-yoko.png"), #imageLiteral(resourceName: "sou2-yoko.png"), #imageLiteral(resourceName: "sou3-yoko.png"), #imageLiteral(resourceName: "sou4-yoko.png"), #imageLiteral(resourceName: "sou5-yoko.png"), #imageLiteral(resourceName: "sou6-yoko.png"), #imageLiteral(resourceName: "sou7-yoko.png"), #imageLiteral(resourceName: "sou8-yoko.png"), #imageLiteral(resourceName: "sou9-yoko.png")]
+                               #imageLiteral(resourceName: "sou1-yoko.png"), #imageLiteral(resourceName: "sou2-yoko.png"), #imageLiteral(resourceName: "sou3-yoko.png"), #imageLiteral(resourceName: "sou4-yoko.png"), #imageLiteral(resourceName: "sou5-yoko.png"), #imageLiteral(resourceName: "sou6-yoko.png"), #imageLiteral(resourceName: "sou7-yoko.png"), #imageLiteral(resourceName: "sou8-yoko.png"), #imageLiteral(resourceName: "sou9-yoko.png"),
+                               #imageLiteral(resourceName: "ji1-shurink.png"), #imageLiteral(resourceName: "ji2-shrink.png"), #imageLiteral(resourceName: "ji3-shrink.png"), #imageLiteral(resourceName: "ji4-shrink.png"), #imageLiteral(resourceName: "ji6-shrink.png"),#imageLiteral(resourceName: "ji5-shrink.png") , #imageLiteral(resourceName: "ji7-shrink.png"),]
         if muki == 0 {
             x = shrink[num]
         } else {
