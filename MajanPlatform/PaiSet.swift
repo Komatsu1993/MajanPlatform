@@ -113,6 +113,23 @@ class PaiSet: UIViewController {
         makeRow(p: #imageLiteral(resourceName: "ji7-66-90-s-emb.png"), tiPai: "N", ponPai: "34,34,34", kanPai: "34,34,34,34", aPai: 33)
     }
     
+    @IBOutlet weak var naki1_1: UIButton!
+    @IBOutlet weak var naki1_2: UIButton!
+    @IBOutlet weak var naki1_3: UIButton!
+    @IBOutlet weak var naki1_4: UIButton!
+    @IBOutlet weak var naki2_1: UIButton!
+    @IBOutlet weak var naki2_2: UIButton!
+    @IBOutlet weak var naki2_3: UIButton!
+    @IBOutlet weak var naki2_4: UIButton!
+    @IBOutlet weak var naki3_1: UIButton!
+    @IBOutlet weak var naki3_2: UIButton!
+    @IBOutlet weak var naki3_3: UIButton!
+    @IBOutlet weak var naki3_4: UIButton!
+    @IBOutlet weak var naki4_1: UIButton!
+    @IBOutlet weak var naki4_2: UIButton!
+    @IBOutlet weak var naki4_3: UIButton!
+    @IBOutlet weak var naki4_4: UIButton!
+    
     // 初期化処理
     @IBAction func reset(_ sender: Any) {
         now = 0
@@ -265,6 +282,8 @@ class PaiSet: UIViewController {
         pais = [self.pai1, self.pai2, self.pai3, self.pai4, self.pai5, self.pai6, self.pai7, self.pai8, self.pai9, self.pai10, self.pai11, self.pai12, self.pai13, self.pai14]
         nakiPai.text = makeStr(str: naki)
         
+        // 鳴き牌表示用のボタンの配列を作る
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -413,6 +432,28 @@ class PaiSet: UIViewController {
             }
         }
     }
+    
+    // 鳴きの面子を表示するための関数
+    // 引数はその牌の数字と縦か横か : 縦 0 横 1
+    // 戻り値は画像
+    func henkanImage(num:Int, muki: Int) -> UIImage {
+        var x = #imageLiteral(resourceName: "default-shrink.png")
+        let shrink: [UIImage] = [#imageLiteral(resourceName: "ji1-shurink.png"), #imageLiteral(resourceName: "ji2-shrink.png"), #imageLiteral(resourceName: "ji3-shrink.png"), #imageLiteral(resourceName: "ji4-shrink.png"), #imageLiteral(resourceName: "ji6-shrink.png"),#imageLiteral(resourceName: "ji5-shrink.png") , #imageLiteral(resourceName: "ji7-shrink.png"),
+                                #imageLiteral(resourceName: "man1-shrink.png"), #imageLiteral(resourceName: "man2-shrink.png"), #imageLiteral(resourceName: "man3-shrink.png"), #imageLiteral(resourceName: "man4-shrink.png"), #imageLiteral(resourceName: "man5-shrink.png"), #imageLiteral(resourceName: "man6-shrink.png"), #imageLiteral(resourceName: "man7-shrink.png"), #imageLiteral(resourceName: "man8-shrink.png"), #imageLiteral(resourceName: "man9-shrink.png"),
+                                #imageLiteral(resourceName: "pin1-shrink.png"), #imageLiteral(resourceName: "pin2-shrink.png"), #imageLiteral(resourceName: "pin3-shrink.png"), #imageLiteral(resourceName: "pin4-shrink.png"), #imageLiteral(resourceName: "pin5-shrink.png"), #imageLiteral(resourceName: "pin6-shrink.png"), #imageLiteral(resourceName: "pin7-shrink.png"), #imageLiteral(resourceName: "pin8-shrink.png"), #imageLiteral(resourceName: "pin9-shrink.png"),
+                                #imageLiteral(resourceName: "sou1-shrink.png"), #imageLiteral(resourceName: "sou2-shrink.png"), #imageLiteral(resourceName: "sou3-shrink.png"), #imageLiteral(resourceName: "sou4-shrink.png"), #imageLiteral(resourceName: "sou5-shrink.png"), #imageLiteral(resourceName: "sou6-shrink.png"), #imageLiteral(resourceName: "sou7-shrink.png"), #imageLiteral(resourceName: "sou8-shrink.png"), #imageLiteral(resourceName: "sou9-shrink.png")]
+        let yoko: [UIImage] = [#imageLiteral(resourceName: "ji1-yoko.png"), #imageLiteral(resourceName: "ji2-yoko.png"), #imageLiteral(resourceName: "ji3-yoko.png"), #imageLiteral(resourceName: "ji4-yoko.png"), #imageLiteral(resourceName: "ji6-yoko.png"), #imageLiteral(resourceName: "ji5-yoko.png"), #imageLiteral(resourceName: "ji7-yoko.png"),
+                               #imageLiteral(resourceName: "man1-yoko.png"), #imageLiteral(resourceName: "man2-yoko.png"), #imageLiteral(resourceName: "man3-yoko.png"), #imageLiteral(resourceName: "man4-yoko.png"), #imageLiteral(resourceName: "man5-yoko.png"), #imageLiteral(resourceName: "man6-yoko.png"), #imageLiteral(resourceName: "man7-yoko.png"), #imageLiteral(resourceName: "man8-yoko.png"), #imageLiteral(resourceName: "man9-yoko.png"),
+                               #imageLiteral(resourceName: "pin1-yoko.png"), #imageLiteral(resourceName: "pin2-yoko.png"), #imageLiteral(resourceName: "pin3-yoko.png"), #imageLiteral(resourceName: "pin4-yoko.png"), #imageLiteral(resourceName: "pin5-yoko.png"), #imageLiteral(resourceName: "pin6-yoko.png"), #imageLiteral(resourceName: "pin7-yoko.png"), #imageLiteral(resourceName: "pin8-yoko.png"), #imageLiteral(resourceName: "pin9-yoko.png"),
+                               #imageLiteral(resourceName: "sou1-yoko.png"), #imageLiteral(resourceName: "sou2-yoko.png"), #imageLiteral(resourceName: "sou3-yoko.png"), #imageLiteral(resourceName: "sou4-yoko.png"), #imageLiteral(resourceName: "sou5-yoko.png"), #imageLiteral(resourceName: "sou6-yoko.png"), #imageLiteral(resourceName: "sou7-yoko.png"), #imageLiteral(resourceName: "sou8-yoko.png"), #imageLiteral(resourceName: "sou9-yoko.png")]
+        if muki == 0 {
+            x = shrink[num]
+        } else {
+            x = yoko[num]
+        }
+        return x
+    }
+    
     
     @IBAction func unwindToTop(segue: UIStoryboardSegue) {
         
