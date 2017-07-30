@@ -134,11 +134,10 @@ class PaiSet: UIViewController {
     @IBAction func reset(_ sender: Any) {
         now = 0
         for i in 0...nowMen - 1 {
-            pais[i].setImage(#imageLiteral(resourceName: "defaultPai.png"), for: .normal);
+            pais[i].setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal);
         }
         nowMen = 0
         naki = [String]()
-        nakiPai.text = makeStr(str: naki);
         
         all = [Int](repeating:0, count:34)
         kui = [false, false, false, false]
@@ -147,7 +146,14 @@ class PaiSet: UIViewController {
         kanNum = 0
         henkanDic = [UIImage:Int]()
         nowMati = -1
-        matiPai.setImage(#imageLiteral(resourceName: "defaultPai.png"), for: .normal)
+        matiPai.setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal)
+        
+        for i in nakiImage {
+            i[0].setImage(#imageLiteral(resourceName: "default-yoko.png"), for: .normal)
+            for j in 1...3 {
+                i[j].setImage(#imageLiteral(resourceName: "default-shrink.png"), for: .normal)
+            }
+        }
         
     }
     
@@ -189,60 +195,88 @@ class PaiSet: UIViewController {
     @IBOutlet weak var matiPai: UIButton!
     
     @IBAction func mati1(_ sender: Any) {
-        matiPai.setImage(pai1.currentImage, for: .normal);
-        nowMati = 0
+        if pai1.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai1.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati2(_ sender: Any) {
-        matiPai.setImage(pai2.currentImage, for: .normal);
-        nowMati = 0
+        if pai2.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai2.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati3(_ sender: Any) {
-        matiPai.setImage(pai3.currentImage, for: .normal);
-        nowMati = 0
+        if pai3.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai3.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati4(_ sender: Any) {
-        matiPai.setImage(pai4.currentImage, for: .normal);
-        nowMati = 0
+        if pai4.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai4.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati5(_ sender: Any) {
-        matiPai.setImage(pai5.currentImage, for: .normal);
-        nowMati = 0
+        if pai5.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai5.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati6(_ sender: Any) {
-        matiPai.setImage(pai6.currentImage, for: .normal);
-        nowMati = 0
+        if pai6.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai6.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati7(_ sender: Any) {
-        matiPai.setImage(pai7.currentImage, for: .normal);
-        nowMati = 0
+        if pai7.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai7.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati8(_ sender: Any) {
-        matiPai.setImage(pai8.currentImage, for: .normal);
-        nowMati = 0
+        if pai8.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai8.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati9(_ sender: Any) {
-        matiPai.setImage(pai9.currentImage, for: .normal);
-        nowMati = 0
+        if pai9.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai9.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati10(_ sender: Any) {
-        matiPai.setImage(pai10.currentImage, for: .normal);
-        nowMati = 0
+        if pai10.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai10.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati11(_ sender: Any) {
-        matiPai.setImage(pai11.currentImage, for: .normal);
-        nowMati = 0
+        if pai11.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai11.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati12(_ sender: Any) {
-        matiPai.setImage(pai12.currentImage, for: .normal);
-        nowMati = 0
+        if pai12.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai12.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati13(_ sender: Any) {
-        matiPai.setImage(pai13.currentImage, for: .normal);
-        nowMati = 0
+        if pai12.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai13.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     @IBAction func mati14(_ sender: Any) {
-        matiPai.setImage(pai14.currentImage, for: .normal);
-        nowMati = 0
+        if pai12.currentImage != #imageLiteral(resourceName: "defalt-white.png") {
+            matiPai.setImage(pai14.currentImage, for: .normal);
+            nowMati = 0
+        }
     }
     
     var pais = [UIButton!]()     // 第一行の門前牌姿を入れる配列
@@ -279,11 +313,21 @@ class PaiSet: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        matiPai.setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal)
         
         pais = [self.pai1, self.pai2, self.pai3, self.pai4, self.pai5, self.pai6, self.pai7, self.pai8, self.pai9, self.pai10, self.pai11, self.pai12, self.pai13, self.pai14]
+        for i in 0...13 {
+            pais[i].setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal);
+        }
         
         // 鳴き牌表示用のボタンの配列を作る
         nakiImage = [[naki1_1, naki1_2, naki1_3, naki1_4], [naki2_1, naki2_2, naki2_3, naki2_4], [naki3_1, naki3_2, naki3_3, naki3_4], [naki4_1, naki4_2, naki4_3, naki4_4]]
+        for i in nakiImage {
+            i[0].setImage(#imageLiteral(resourceName: "default-yoko.png"), for: .normal)
+            for j in 1...3 {
+                i[j].setImage(#imageLiteral(resourceName: "default-shrink.png"), for: .normal)
+            }
+        }
         
     }
 
@@ -399,21 +443,21 @@ class PaiSet: UIViewController {
         
         var errorCheck = 0      // この値が0の時のみ正常
         
-        // まず５枚以上使用していないかのチェック
+        // まず５枚以上使用していないかのチェック : エラー時 : 1
         for i in all {
             if i > 4 {
-                errorCheck += 1
+                errorCheck = 1
                 break
             }
         }
         
-        // 牌の合計枚数がカンを考慮した上で正確な枚数か
+        // 牌の合計枚数がカンを考慮した上で正確な枚数か : エラー時 : 2
         var num = 0 - kanNum
         for i in all {
             num += i
         }
         if num != 14 {
-            errorCheck += 1
+            errorCheck = 2
         }
         
         // 入力に問題がなければ上がりの判定を行う
@@ -430,19 +474,42 @@ class PaiSet: UIViewController {
             mentsu = agariHantei.agari
         }
         
-        // 入力が不正だった場合に表示するアラート
-        let alert = UIAlertController(title: "alert", message: "TEST", preferredStyle: .alert)
-        let kakunin = UIAlertAction(title: "確認", style: .default) {
-            action in print("確認")
-        }
-        alert.addAction(kakunin)
         
         if segue.identifier == "toDetail" {
             
             let tes = segue.destination as! SetDetails
-            if mentsu.isEmpty || nowMati == -1 {
+            if nowMati == -1 {
+                // 入力が不正だった場合に表示するアラート
+                let alert = UIAlertController(title: "", message: "待ちが選択されていません", preferredStyle: .alert)
+                let kakunin = UIAlertAction(title: "確認", style: .default) {
+                    action in print("確認")
+                }
+                alert.addAction(kakunin)
                 present(alert, animated: true, completion: nil)
-                print("アラート処理")
+            } else if errorCheck == 1 {
+                // 入力が不正だった場合に表示するアラート
+                let alert = UIAlertController(title: "", message: "５枚以上使用している牌があります", preferredStyle: .alert)
+                let kakunin = UIAlertAction(title: "確認", style: .default) {
+                    action in print("確認")
+                }
+                alert.addAction(kakunin)
+                present(alert, animated: true, completion: nil)
+            } else if errorCheck == 2 {
+                // 入力が不正だった場合に表示するアラート
+                let alert = UIAlertController(title: "", message: "合計枚数が不正です", preferredStyle: .alert)
+                let kakunin = UIAlertAction(title: "確認", style: .default) {
+                    action in print("確認")
+                }
+                alert.addAction(kakunin)
+                present(alert, animated: true, completion: nil)
+            } else if mentsu.isEmpty {
+                // 入力が不正だった場合に表示するアラート
+                let alert = UIAlertController(title: "", message: "上がっていません", preferredStyle: .alert)
+                let kakunin = UIAlertAction(title: "確認", style: .default) {
+                    action in print("確認")
+                }
+                alert.addAction(kakunin)
+                present(alert, animated: true, completion: nil)
             } else {
             // 次の画面への変数代入
                 tes.all = self.all
@@ -450,6 +517,17 @@ class PaiSet: UIViewController {
                 tes.naki = self.kui
                 tes.nakiMentsu = self.nakiMentsu
                 tes.mati = henkanDic[matiPai.currentImage!]!
+                
+            // 次の画面へ画像も送る
+                let x = [pais[0].currentImage, pais[1].currentImage, pais[2].currentImage, pais[3].currentImage, pais[4].currentImage, pais[5].currentImage, pais[6].currentImage,
+                         pais[7].currentImage, pais[8].currentImage, pais[9].currentImage, pais[10].currentImage, pais[11].currentImage,
+                         pais[12].currentImage, pais[13].currentImage]
+                let y = [[nakiImage[0][0].currentImage, nakiImage[0][1].currentImage, nakiImage[0][2].currentImage, nakiImage[0][3].currentImage],
+                         [nakiImage[1][0].currentImage, nakiImage[1][1].currentImage, nakiImage[1][2].currentImage, nakiImage[1][3].currentImage],
+                         [nakiImage[2][0].currentImage, nakiImage[2][1].currentImage, nakiImage[2][2].currentImage, nakiImage[2][3].currentImage],
+                         [nakiImage[3][0].currentImage, nakiImage[3][1].currentImage, nakiImage[3][2].currentImage, nakiImage[3][3].currentImage]]
+                tes.menzenPais = x as! [UIImage]
+                tes.nakiPais = y as! [[UIImage]]
             }
         }
     }

@@ -121,6 +121,7 @@
 		5546041C1F2DC56100930EA8 /* sou9-shrink.png in Resources */ = {isa = PBXBuildFile; fileRef = 554603DA1F2DC56000930EA8 /* sou9-shrink.png */; };
 		5546041D1F2DC56100930EA8 /* sou9-yoko.png in Resources */ = {isa = PBXBuildFile; fileRef = 554603DB1F2DC56000930EA8 /* sou9-yoko.png */; };
 		5546041F1F2DCDA700930EA8 /* ankanUra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546041E1F2DCDA700930EA8 /* ankanUra.png */; };
+		554604211F2DD7E200930EA8 /* defalt-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 554604201F2DD7E200930EA8 /* defalt-white.png */; };
 		5559DBC31F2CED6900E01C66 /*  Toitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559DBC21F2CED6900E01C66 /*  Toitu.swift */; };
 		5559DBC51F2CF9CA00E01C66 /* Tuharon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */; };
 		555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */; };
@@ -279,6 +280,7 @@
 		554603DA1F2DC56000930EA8 /* sou9-shrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou9-shrink.png"; sourceTree = "<group>"; };
 		554603DB1F2DC56000930EA8 /* sou9-yoko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sou9-yoko.png"; sourceTree = "<group>"; };
 		5546041E1F2DCDA700930EA8 /* ankanUra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ankanUra.png; sourceTree = "<group>"; };
+		554604201F2DD7E200930EA8 /* defalt-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defalt-white.png"; sourceTree = "<group>"; };
 		5559DBC21F2CED6900E01C66 /*  Toitu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " Toitu.swift"; sourceTree = "<group>"; };
 		5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuharon.swift; sourceTree = "<group>"; };
 		555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgariHantei.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				554603DA1F2DC56000930EA8 /* sou9-shrink.png */,
 				554603DB1F2DC56000930EA8 /* sou9-yoko.png */,
 				5546041E1F2DCDA700930EA8 /* ankanUra.png */,
+				554604201F2DD7E200930EA8 /* defalt-white.png */,
 				553F0C101F275519003816E5 /* AppDelegate.swift */,
 				553F0C121F275519003816E5 /* ViewController.swift */,
 				553F0C141F275519003816E5 /* Main.storyboard */,
@@ -633,6 +636,7 @@
 				554603E81F2DC56000930EA8 /* man1-shrink.png in Resources */,
 				554603DC1F2DC56000930EA8 /* ji2-shrink.png in Resources */,
 				554603F51F2DC56100930EA8 /* man7-yoko.png in Resources */,
+				554604211F2DD7E200930EA8 /* defalt-white.png in Resources */,
 				554603FC1F2DC56100930EA8 /* pin2-shrink.png in Resources */,
 				5546040F1F2DC56100930EA8 /* sou2-yoko.png in Resources */,
 				553F0CB61F277708003816E5 /* sou4-66-90-s-emb.png in Resources */,

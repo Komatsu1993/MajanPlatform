@@ -758,20 +758,6 @@
                                     <segue destination="9hc-PE-ylr" kind="presentation" identifier="toKekka" id="OK8-AC-WyX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="前の牌姿をそのまま貼り付ける" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY3-Ck-TtZ">
-                                <rect key="frame" x="69" y="20" width="499" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="前の牌姿をそのまま貼り付ける" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="typ-aK-GTW">
-                                <rect key="frame" x="69" y="61" width="499" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="場風" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlk-Kt-dcM">
                                 <rect key="frame" x="296" y="212" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -813,6 +799,153 @@
                                     <segment title="北"/>
                                 </segments>
                             </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f92-78-LaK">
+                                <rect key="frame" x="62" y="20" width="448" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntz-PX-LXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-jj-6bG">
+                                        <rect key="frame" x="32" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOE-dT-2yy">
+                                        <rect key="frame" x="64" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYl-K6-82Y">
+                                        <rect key="frame" x="96" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3es-SJ-7M3">
+                                        <rect key="frame" x="128" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb6-h8-3ws">
+                                        <rect key="frame" x="160" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-dx-XuS">
+                                        <rect key="frame" x="192" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9z-dK-e22">
+                                        <rect key="frame" x="224" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGu-qf-orm">
+                                        <rect key="frame" x="256" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVz-bl-3yC">
+                                        <rect key="frame" x="288" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjG-tf-GCQ">
+                                        <rect key="frame" x="320" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y13-dw-ici">
+                                        <rect key="frame" x="352" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQs-eL-eTS">
+                                        <rect key="frame" x="384" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-gJ-NeM">
+                                        <rect key="frame" x="416" y="0.0" width="32" height="45"/>
+                                        <state key="normal" image="defaultPai.png"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-EW-cMw">
+                                <rect key="frame" x="75" y="75" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-yoko.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-tx-niS">
+                                <rect key="frame" x="108" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-VA-4Dz">
+                                <rect key="frame" x="135" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGb-GG-Kdp">
+                                <rect key="frame" x="161" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYm-9v-XDE">
+                                <rect key="frame" x="195" y="75" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-yoko.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYT-gp-lPg">
+                                <rect key="frame" x="228" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-vA-hmB">
+                                <rect key="frame" x="255" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p58-nV-8tQ">
+                                <rect key="frame" x="281" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92p-D0-51a">
+                                <rect key="frame" x="315" y="75" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-yoko.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1m-j4-pu0">
+                                <rect key="frame" x="348" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-dW-OIh">
+                                <rect key="frame" x="375" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-GS-sO2">
+                                <rect key="frame" x="401" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJk-L0-fH2">
+                                <rect key="frame" x="435" y="75" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-yoko.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-Kx-JkT">
+                                <rect key="frame" x="468" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mL-4d-tsJ">
+                                <rect key="frame" x="495" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwd-ah-pBD">
+                                <rect key="frame" x="521" y="75" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ji1-shurink.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olz-tY-fXh">
+                                <rect key="frame" x="549" y="20" width="32" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="defaultPai.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -821,7 +954,38 @@
                         <outlet property="haiteiHow" destination="LX0-uF-WVy" id="qdi-wd-y51"/>
                         <outlet property="ieHow" destination="gwO-yn-xM1" id="M8Z-ws-aJA"/>
                         <outlet property="kanshanHow" destination="w3I-hk-9lR" id="Y1h-yd-FHE"/>
+                        <outlet property="matiPai" destination="Olz-tY-fXh" id="yy6-4U-BWf"/>
                         <outlet property="myaoshaoHow" destination="50p-OE-ZQd" id="gcZ-dQ-9Tg"/>
+                        <outlet property="naki1_1" destination="rfU-EW-cMw" id="6I5-82-4Je"/>
+                        <outlet property="naki1_2" destination="c9a-tx-niS" id="AFz-ca-Qe5"/>
+                        <outlet property="naki1_3" destination="bYj-VA-4Dz" id="o56-Tk-CKS"/>
+                        <outlet property="naki1_4" destination="rGb-GG-Kdp" id="YGw-Cx-mCw"/>
+                        <outlet property="naki2_1" destination="wYm-9v-XDE" id="Cf1-H9-8Fv"/>
+                        <outlet property="naki2_2" destination="hYT-gp-lPg" id="sZh-69-4Wm"/>
+                        <outlet property="naki2_3" destination="BLh-vA-hmB" id="Juq-2n-Kf8"/>
+                        <outlet property="naki2_4" destination="p58-nV-8tQ" id="wnS-ap-6ft"/>
+                        <outlet property="naki3_1" destination="92p-D0-51a" id="wGo-5J-4Sk"/>
+                        <outlet property="naki3_2" destination="k1m-j4-pu0" id="Ij2-nW-76K"/>
+                        <outlet property="naki3_3" destination="FNa-dW-OIh" id="i1j-qR-AsP"/>
+                        <outlet property="naki3_4" destination="Ceu-GS-sO2" id="31R-bN-GgJ"/>
+                        <outlet property="naki4_1" destination="iJk-L0-fH2" id="gUc-Cb-eag"/>
+                        <outlet property="naki4_2" destination="TqV-Kx-JkT" id="9Vg-a0-qwa"/>
+                        <outlet property="naki4_3" destination="6mL-4d-tsJ" id="5xZ-z4-eLt"/>
+                        <outlet property="naki4_4" destination="Xwd-ah-pBD" id="yne-rP-pYH"/>
+                        <outlet property="pai1" destination="ntz-PX-LXB" id="2iN-mz-hOk"/>
+                        <outlet property="pai10" destination="oVz-bl-3yC" id="3Lc-rM-QAS"/>
+                        <outlet property="pai11" destination="LjG-tf-GCQ" id="2qe-Jf-f1S"/>
+                        <outlet property="pai12" destination="Y13-dw-ici" id="VZV-xU-Kc1"/>
+                        <outlet property="pai13" destination="NQs-eL-eTS" id="AAf-2a-IPR"/>
+                        <outlet property="pai14" destination="aTQ-gJ-NeM" id="4cy-Zi-VsE"/>
+                        <outlet property="pai2" destination="0E1-jj-6bG" id="gYv-Qq-N16"/>
+                        <outlet property="pai3" destination="SOE-dT-2yy" id="gYn-eB-QTy"/>
+                        <outlet property="pai4" destination="tYl-K6-82Y" id="kdq-EB-mMY"/>
+                        <outlet property="pai5" destination="3es-SJ-7M3" id="O7K-h6-F2b"/>
+                        <outlet property="pai6" destination="Gb6-h8-3ws" id="7tv-pM-pWQ"/>
+                        <outlet property="pai7" destination="h7T-dx-XuS" id="NSH-Ic-o2l"/>
+                        <outlet property="pai8" destination="b9z-dK-e22" id="h8n-fz-Xt3"/>
+                        <outlet property="pai9" destination="DGu-qf-orm" id="jn2-xQ-aFT"/>
                         <outlet property="tumoHow" destination="Ja9-BB-5hL" id="8Ig-ya-bAJ"/>
                         <outlet property="tyankanHow" destination="KUw-Gb-ufs" id="qdX-F9-Ztx"/>
                         <outlet property="zecchoHow" destination="lNM-xJ-OpO" id="993-v1-K6R"/>
@@ -830,7 +994,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPh-yl-lh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XHv-kZ-FDP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1148" y="22"/>
+            <point key="canvasLocation" x="1208" y="12"/>
         </scene>
         <!--Kekka-->
         <scene sceneID="UzL-0H-4K3">
