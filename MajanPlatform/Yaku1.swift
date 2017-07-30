@@ -203,7 +203,7 @@ class Yaku1 {
                         yaku[77] = 1
                     }
                 } else {
-                    if m3[1] == w, yaku[78] != -1 {
+                    if m4[1] == w, yaku[78] != -1 {
                         yaku[78] = 1
                     } else {
                         yaku[77] = 1

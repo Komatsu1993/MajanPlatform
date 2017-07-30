@@ -528,6 +528,7 @@ class PaiSet: UIViewController {
                          [nakiImage[3][0].currentImage, nakiImage[3][1].currentImage, nakiImage[3][2].currentImage, nakiImage[3][3].currentImage]]
                 tes.menzenPais = x as! [UIImage]
                 tes.nakiPais = y as! [[UIImage]]
+                tes.matiPaiImage = matiPai.currentImage!
             }
         }
     }

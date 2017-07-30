@@ -20,6 +20,7 @@ class SetDetails: UIViewController {
     var mati = -1           // 待ち牌
     var menzenPais = [UIImage]()          // 一行に表示する牌
     var nakiPais = [[UIImage]]()          // 二行に表示する牌
+    var matiPaiImage = #imageLiteral(resourceName: "defalt-white.png")                 // 待ち牌の画像
     
     @IBOutlet weak var tumoHow: UISwitch!
     @IBOutlet weak var kanshanHow: UISwitch!
@@ -121,6 +122,8 @@ class SetDetails: UIViewController {
             }
             num1 += 1
         }
+        
+        matiPai.setImage(matiPaiImage, for: .normal)
     }
     
     // 次の画面に送る処理,役と点数を調べる
@@ -381,6 +384,9 @@ class SetDetails: UIViewController {
             let tes = segue.destination as! Kekka
             tes.tenPt = ans
             tes.pt = now
+            tes.menzenPais = menzenPais
+            tes.nakiPais = nakiPais
+            tes.matiPaiImage = matiPaiImage
         }
 
     }
