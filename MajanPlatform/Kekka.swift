@@ -16,9 +16,21 @@ class Kekka: UIViewController {
     var menzenPais = [UIImage]()          // 一行に表示する牌
     var nakiPais = [[UIImage]]()          // 二行に表示する牌
     var matiPaiImage = #imageLiteral(resourceName: "defalt-white.png")                 // 待ち牌の画像
-    
-    @IBOutlet weak var yakumei: UILabel!
+
     @IBOutlet weak var goukeiten: UILabel!
+    
+    @IBOutlet weak var yakumei1: UILabel!
+    @IBOutlet weak var yakumei2: UILabel!
+    @IBOutlet weak var yakumei3: UILabel!
+    @IBOutlet weak var yakumei4: UILabel!
+    @IBOutlet weak var yakumei5: UILabel!
+    @IBOutlet weak var yakumei6: UILabel!
+    @IBOutlet weak var yakumei7: UILabel!
+    @IBOutlet weak var yakumei8: UILabel!
+    @IBOutlet weak var yakumei9: UILabel!
+    @IBOutlet weak var yakumei10: UILabel!
+    @IBOutlet weak var yakumei11: UILabel!
+    @IBOutlet weak var yakumei12: UILabel!
     
     @IBOutlet weak var pai1: UIButton!
     @IBOutlet weak var pai2: UIButton!
@@ -58,13 +70,23 @@ class Kekka: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let yakumei = [yakumei1, yakumei2, yakumei3, yakumei4, yakumei5, yakumei6, yakumei7, yakumei8, yakumei9, yakumei10, yakumei1, yakumei12]
         
-        var text = ""
+        var tumoOr = -1
+        var sum = 0
         for (name, point) in tenPt {
-            text += "\(name)    :    \(point) \n"
+                yakumei[sum]?.text! += "\(name) \t : \(point) 点 \n"
+            sum += 1
+            if name == "自摸" || name == "不求人" {
+                tumoOr = 0
+            }
         }
-        yakumei.text = text
-        goukeiten.text = String(pt)
+        
+        if tumoOr == -1 {
+            goukeiten.text = "\(pt) は \(pt + 8)点 \t (合計点 : \(pt + 24)点)"
+        } else {
+            goukeiten.text = "\(pt) は \(pt + 8)点 \t (合計点 : \((pt + 8) * 3)点)"
+        }
         // Do any additional setup after loading the view.
         
         let menzen:[UIButton] = [pai1, pai2, pai3, pai4, pai5, pai6, pai7, pai8, pai9, pai10, pai11, pai12, pai13, pai14]

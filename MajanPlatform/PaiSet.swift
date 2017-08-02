@@ -133,8 +133,10 @@ class PaiSet: UIViewController {
     // 初期化処理
     @IBAction func reset(_ sender: Any) {
         now = 0
-        for i in 0...nowMen - 1 {
-            pais[i].setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal);
+        if nowMen > 0 {
+            for i in 0...nowMen - 1 {
+                pais[i].setImage(#imageLiteral(resourceName: "defalt-white.png"), for: .normal);
+            }
         }
         nowMen = 0
         naki = [String]()
@@ -424,10 +426,10 @@ class PaiSet: UIViewController {
                     naki.append(kanPai); now += 3
                     all[aPai] += 4; kanNum += 1;
                     nakiMentsu.append([aPai, aPai, aPai, aPai])
-                    nakiImage[nakiNum][0].setImage(#imageLiteral(resourceName: "ankanUra.png"), for: .normal)
+                    nakiImage[nakiNum][0].setImage(#imageLiteral(resourceName: "unkanHalf.png"), for: .normal)
                     nakiImage[nakiNum][1].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
                     nakiImage[nakiNum][2].setImage(henkanImage(num: aPai, muki: 0), for: .normal)
-                    nakiImage[nakiNum][3].setImage(#imageLiteral(resourceName: "ankanUra.png"), for: .normal)
+                    nakiImage[nakiNum][3].setImage(#imageLiteral(resourceName: "unkanHalf.png"), for: .normal)
                     kui[nakiNum] = false; nakiNum += 1;
                 }
             } else {
