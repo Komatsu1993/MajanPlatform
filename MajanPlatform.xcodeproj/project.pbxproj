@@ -126,6 +126,7 @@
 		5559DBC51F2CF9CA00E01C66 /* Tuharon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */; };
 		555BFE961F2AFD8D005EF9D8 /* AgariHantei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */; };
 		555BFE981F2B01ED005EF9D8 /* SetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555BFE971F2B01ED005EF9D8 /* SetDetails.swift */; };
+		5592DCA61F323FAC00C20EFE /* ankan-shrink.png in Resources */ = {isa = PBXBuildFile; fileRef = 5592DCA51F323FAC00C20EFE /* ankan-shrink.png */; };
 		55AD69751F3200FF00C7CE6D /* YakuallTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD69741F3200FF00C7CE6D /* YakuallTop.swift */; };
 		55AD69771F32165400C7CE6D /* Yakumei88.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD69761F32165400C7CE6D /* Yakumei88.swift */; };
 		55E72BA61F2F3D7500D9FF5B /* unkanHalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E72BA51F2F3D7500D9FF5B /* unkanHalf.png */; };
@@ -288,6 +289,7 @@
 		5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuharon.swift; sourceTree = "<group>"; };
 		555BFE951F2AFD8D005EF9D8 /* AgariHantei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgariHantei.swift; sourceTree = "<group>"; };
 		555BFE971F2B01ED005EF9D8 /* SetDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDetails.swift; sourceTree = "<group>"; };
+		5592DCA51F323FAC00C20EFE /* ankan-shrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ankan-shrink.png"; sourceTree = "<group>"; };
 		55AD69741F3200FF00C7CE6D /* YakuallTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YakuallTop.swift; sourceTree = "<group>"; };
 		55AD69761F32165400C7CE6D /* Yakumei88.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yakumei88.swift; sourceTree = "<group>"; };
 		55E72BA51F2F3D7500D9FF5B /* unkanHalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unkanHalf.png; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				55FF5B521F2C982C009E9C61 /* CheckYaku.swift */,
 				55FF5B541F2C9CD9009E9C61 /* Kekka.swift */,
 				5559DBC21F2CED6900E01C66 /*  Toitu.swift */,
+				5592DCA51F323FAC00C20EFE /* ankan-shrink.png */,
 				55E72BA51F2F3D7500D9FF5B /* unkanHalf.png */,
 				5559DBC41F2CF9CA00E01C66 /* Tuharon.swift */,
 				55AD69741F3200FF00C7CE6D /* YakuallTop.swift */,
@@ -708,6 +711,7 @@
 				554603FA1F2DC56100930EA8 /* pin1-shrink.png in Resources */,
 				5546041D1F2DC56100930EA8 /* sou9-yoko.png in Resources */,
 				554603ED1F2DC56000930EA8 /* man3-yoko.png in Resources */,
+				5592DCA61F323FAC00C20EFE /* ankan-shrink.png in Resources */,
 				553F0CB21F277708003816E5 /* pin9-66-90-s-emb.png in Resources */,
 				554603F41F2DC56100930EA8 /* man7-shrink.png in Resources */,
 				553F0CAC1F277708003816E5 /* pin3-66-90-s-emb.png in Resources */,
